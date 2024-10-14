@@ -1,0 +1,18 @@
+<resources>
+    <string name="underlined_text"><u>Dans cette application:</u></string>
+    <string name="app_name">AvocatApp</string>
+    <string name="signIn">Sing in</string>
+    <string name="signUp">Sing up</string>
+    <string name="clientSignUp">Sign Up Comme Un Client</string>
+    <string name="consultanttSignUp">Sign Up Comme Un Consultant</string>
+    <string name="avocatSignUp">Sign Up Comme Un Avocat</string>
+    <string name="alreadyamember">Etes-vous membre?</string>
+    <string name="email_input">saisir votre email</string>
+    <string name="password_input">saisie votre mot de passe</string>
+    <string name="nom_input">Saisir votre nom</string>
+    <string name="prenom_input">Saisir votre prenom</string>
+    <string name="years_of_exp">saisir votre ancienité</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="Gender">sexe</string>
+</resources>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="900dp"
+    android:background="#0E0E0E"
+
+    tools:context=".MainActivity3">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="500dp"
+        android:layout_height="900dp"
+
+        android:layout_marginTop="-20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avocat5" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="318dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="40dp"
+        android:text="Et maintenant, vous devez créer un compte pour utiliser cette application. Mais comment ?"
+        android:textColor="@color/orange"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="273dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="48dp"
+        android:text="Si vous êtes un avocat, cliquez ici."
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="323dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="48dp"
+
+        android:text="Si vous êtes un conseiller juridique, cliquez ici."
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/signUpcommeUnConsultant"
+        android:layout_width="150dp"
+        android:layout_height="53dp"
+
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="316dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:text="Sign Up "
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:cornerRadius="30px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/signUpCommeUnAvocat"
+        android:layout_width="157dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="52dp"
+
+        android:background="@android:color/transparent"
+        android:text="Sign Up "
+
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:cornerRadius="30px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpcommeUnConsultant"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/signUpcommeUnClient"
+        android:layout_width="149dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="40dp"
+
+        android:background="@android:color/transparent"
+
+        android:text="Sign Up "
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:cornerRadius="30px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpCommeUnAvocat"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="293dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:text="Si vous êtes un Client, cliquez ici."
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/commencer2"
+        android:layout_width="484dp"
+        android:layout_height="72dp"
+
+        android:layout_marginTop="-60dp"
+        android:layout_marginBottom="-50dp"
+        android:backgroundTint="@color/orange"
+        android:text="Commencer"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.582"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="335dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:text="Si vous avez déjà créé un compte, cliquez Sign in."
+
+        android:textColor="@color/orange"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

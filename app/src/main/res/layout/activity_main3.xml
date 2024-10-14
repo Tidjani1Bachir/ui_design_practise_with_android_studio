@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+
+    android:layout_width="match_parent"
+    android:layout_height="900dp"
+    android:background="#0E0E0E"
+    tools:context=".MainActivity3">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="500dp"
+        android:layout_height="1800dp"
+
+        android:layout_marginTop="-200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.674"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.462"
+        app:srcCompat="@drawable/avocat5" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="335dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Pourquoi Vous Ne pouvez pas rtouver des avocat directemnt Dans notre application?"
+        android:textColor="@color/orange"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="301dp"
+        android:layout_height="215dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:text="Après la consultation d'un avocat expert, nous avons découvert qu'il n'est pas légal pour les avocats de poster leurs informations en ligne. C'est pourquoi vous ne pouvez trouver que des conseillers juridiques sur notre plateforme. Dans ce cadre, nous vous proposons: "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="309dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Une section dans notre application vous permet de contacter votre avocat en évitant les déplacements inutiles et très fréquents, d'une manière confidentielle. Il vous suffit de vous déplacer uniquement pour la première fois."
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="312dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:text="Et Bien Sur Des Conseiller juridique"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/suiv"
+        android:layout_width="484dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="85dp"
+        android:backgroundTint="@color/orange"
+        android:text="Suivant"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

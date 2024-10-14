@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:backgroundTint="@color/black"
+    android:layout_height="match_parent"
+    android:background="#0E0E0E"
+
+    tools:context=".MainActivity3">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="600dp"
+        android:layout_height="900dp"
+        android:layout_marginTop="-30dp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avocat5"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="365dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="40dp"
+        android:text="Pourquoi Vous Ne pouvez pas rtouver des avocat directemnt Dans notre application?"
+        android:textColor="@color/orange"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="351dp"
+        android:layout_height="367dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        android:text="Après la consultation d'un avocat expert, nous avons découvert qu'il n'est pas légal pour les avocats de poster leurs informations en ligne. C'est pourquoi vous ne pouvez trouver que des conseillers juridiques sur notre plateforme. Dans ce cadre, nous vous proposons: "
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/suivant1111"
+        android:layout_width="484dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="-5dp"
+        android:backgroundTint="@color/orange"
+        android:text="suivant"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

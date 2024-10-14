@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".dashBoardActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="-41dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_bg2"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/logOutClient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="-22dp"
+                    android:background="@android:color/transparent"
+                    android:text="déconnecter"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/logOutAvocat"
+                    android:layout_width="match_parent"
+                    android:layout_height="263dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="-48dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="40dp"
+                    android:paddingRight="20dp">
+
+                    <Button
+                        android:id="@+id/showHideIdLawyer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-40dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/transparent"
+                        android:text="Afficher / masquer"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toTopOf="@+id/clientInputAvocat"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.76"
+                        app:layout_constraintStart_toEndOf="@+id/idLawyer"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="56dp"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="-40dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/i" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="66dp"
+                        android:layout_height="38dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="24dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/bell" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@android:drawable/radiobutton_off_background" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="29dp"
+                        android:layout_height="34dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="-45dp"
+                        android:text="2"
+                        android:textColor="@color/orange"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/idLawyer"
+                        android:layout_width="229dp"
+                        android:layout_height="43dp"
+                        android:layout_marginBottom="120dp"
+                        android:text="textView"
+                        android:textColor="@color/white"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.149"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-120dp"
+                        android:layout_marginTop="-10dp"
+                        android:text="Welcome"
+                        android:textColor="@color/white"
+
+                        android:textSize="22dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.416"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.128" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="60dp"
+                        android:layout_height="31dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/searchBtnAvocat"
+                        app:layout_constraintHorizontal_bias="0.122"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/avocatInputClient"
+                        tools:ignore="MissingConstraints" />
+
+                    <EditText
+                        android:id="@+id/clientInputAvocat"
+                        android:layout_width="343dp"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="56dp"
+                        android:background="@drawable/bg_white"
+                        android:drawableEnd="@drawable/search_icon"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="Search"
+                        android:inputType="text"
+                        android:paddingLeft="70dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/searchBtnAvocat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:text="."
+                        android:textColor="@color/black"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteX="281dp"
+                        tools:layout_editor_absoluteY="115dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/clientRecycleViewAvocat"
+        android:layout_width="418dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="270dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_navigation"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="421dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/addProfilePictureAvocat"
+                android:layout_width="106dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/transparent"
+                android:text="."
+                android:textColor="@color/orange"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView20"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/listOfClients"
+                android:layout_width="117dp"
+                android:layout_height="79dp"
+                android:layout_marginStart="-110dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginEnd="5dp"
+                android:background="@android:color/transparent"
+                android:text="."
+                android:textColor="@color/orange"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView16"
+                app:layout_constraintHorizontal_bias="0.203"
+                app:layout_constraintStart_toEndOf="@+id/imageView12"
+                app:layout_constraintTop_toBottomOf="@+id/imageView12"
+                app:layout_constraintVertical_bias="0.454"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/invBtn"
+                android:layout_width="104dp"
+                android:layout_height="83dp"
+                android:layout_marginStart="100dp"
+                android:background="@android:color/transparent"
+                android:text="."
+                android:textColor="@color/orange"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView19"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="71dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_add_circle_24" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="-50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="120dp"
+                android:text="listes des clients"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView21"
+                app:layout_constraintStart_toEndOf="@+id/textView19"
+                app:layout_constraintTop_toBottomOf="@+id/imageView12"
+                app:layout_constraintVertical_bias="0.555" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="99dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="-40dp"
+                android:layout_marginEnd="50dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView16"
+                app:layout_constraintHorizontal_bias="0.584"
+                app:layout_constraintStart_toEndOf="@+id/textView19"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_account_circle_24" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="127dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="12dp"
+                android:text="Invitations"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView10"
+                app:layout_constraintVertical_bias="0.75" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="-20dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="90dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/invitations"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_collections_24" />
+
+            <TextView
+                android:layout_width="112dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="-130dp"
+                android:layout_marginEnd="60dp"
+                android:text="Ajouter image"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/textView20"
+                app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
